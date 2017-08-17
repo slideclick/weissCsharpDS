@@ -1,0 +1,259 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Mark A. Weiss">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; U) [Netscape]">
+   <title>Source Code for Data Structures and Problem Solving Using C# (Third Edition)</title>
+</head>
+<body>
+
+<h1>
+Source Code for Data Structures and Problem Solving Using C#, Third
+Edition</h1>
+<b>LAST UPDATE: May 3, 2004</b>
+<br><b>BUG REPORTS ARE APPRECIATED!!</b>
+<p>Here is the source code for Data Structures and Problem Solving Using C#, 
+by Mark Allen Weiss. The materials here are copyrighted.
+I have successfully compiled and tested the programs
+with a protoype C# 2.0 compiler.
+
+<!--
+<h2>
+Organization of Files</h2>
+
+<ol>
+<li>
+Most of the general, standalone, code is in the root directory.</li>
+
+<li>
+There is an implementation of a large subset of java.util in package <tt>weiss.util</tt>.
+Its purpose is to illustrate how the concepts are used in an actual library
+implementation. This can be found in the <b><tt>weiss\util</tt></b> folder.
+Some of the sample code imports classes in <tt>weiss.util</tt>, but you
+can freely replace all occurrences of <tt>weiss.util</tt> with <tt>java.util</tt>.
+Needless to say, everything in <tt>weiss.util</tt> has a name clash with
+<tt>java.util</tt>,
+so you should not use wild-card import directives. These files are displayed
+in <b><font color="#000000">BOLDFACE</font></b> font.</li>
+
+<li>
+The package <b>weiss.nonstandard</b>, in the <b>weiss\nonstandard</b> folder,
+contains nonstandard implementations of various data structures. The code
+is generally simpler that the code in the Java Collections API, and
+there are occasional name clashes (e.g. <tt>LinkedList</tt> and <tt>Stack</tt>).
+This package also contains priority queue implementations, since that is
+not part of the Java Collections API. These files are display in <i>ITALICS</i>
+font.</li>
+</ol>
+
+<h3>
+CLASSPATH Info</h3>
+The code in the root directory should automatically compile if there is
+no <tt>CLASSPATH</tt>. Other code will be trickier to compile/run unless
+you use full names relative to the root directory. Otherwise, the easiest
+fix is to make sure that the root directory (i.e. the directory in which
+the <tt>weiss</tt> folder is found) is on your <tt>CLASSPATH</tt>, along
+with<b><tt> .</tt></b>. Let us assume you have extracted everything into
+the <tt>bookcode</tt> folder.
+<ul>
+<li>
+For MS-DOS: <b><tt>set CLASSPATH=C:\bookcode;.</tt></b></li>
+
+<li>
+For Unix: <b><tt>setenv CLASSPATH bookcode:.</tt></b></li>
+</ul>
+Note that case-sensitivity may matter, and there is a difference between
+colons and semicolons.
+<br>If you are using an IDE, you will need to update the <tt>CLASSPATH</tt>
+using the IDE's own mechanism.
+<h4>Jar files</h4>
+An alternative is to install these two jar files
+(<A HREF="wutil.jar">wutil.jar</A> and
+<A HREF="wnonstandard.jar">wnonstandard.jar</A>) in the
+Java extensions directory.
+A typical location would be
+<tt>C:\jdk1.5.0\jre\lib\ext</tt>.
+Once this is done, you can run any of the programs that require
+<tt>weiss.util</tt> or <tt>weiss.nonstandard</tt> from pretty much
+any location.
+(This is every program in the main distribution directory, except
+<tt>MyContainerTest.java</tt>).
+-->
+<h3>
+Complete Bundle</h3>
+<a href="code.zip">code.zip</a>
+(not available, but winzip reads tar files)
+<br><a href="code.tar">code.tar</a>
+<br><a href="code.tar.Z">code.tar.Z</a>
+
+<h3>Compilation Batch File</h3>
+<a href="compileVisual.bat">compileVisual.bat</a>
+<!--
+<h3>
+Package Documentation</h3>
+<a href="../docs/index.html">docs</a>
+<br><a href="../docs.tar">docs.tar</a>
+<br><a href="../docs.tar.Z">docs.tar.Z</a>
+-->
+
+<h3>
+Chapter 1: Basic C#</h3>
+<a href="FirstProgram.cs">FirstProgram.cs</a>
+<br><a href="MinTest.cs">MinTest.cs</a>
+<br><a href="OperatorTest.cs">OperatorTest.cs</a>
+<br><a href="TestSwap.cs">TestSwap.cs</a>
+<h3>
+Chapter 2: References</h3>
+<a href="RandomNumbers.cs">RandomNumbers.cs</a>
+<br><a href="ReadStrings.cs">ReadStrings.cs</a>
+<br><a href="ReadStringsWithArrayList.cs">ReadStringsWithArrayList.cs</a>
+<br><a href="ReadStringsWithGenericList.cs">ReadStringsWithGenericList.cs</a>
+<br><a href="MatrixDemo.cs">MatrixDemo.cs</a>
+<br><a href="ForeachDemo.cs">ForeachDemo.cs</a>
+<br><a href="EchoDemo.cs">EchoDemo.cs</a>
+<br><a href="DivideByTwo.cs">DivideByTwo.cs</a>
+<br><a href="MaxTest.cs">MaxTest.cs</a>
+<br><a href="ListFiles.cs">ListFiles.cs</a>
+<br><a href="DoubleSpace.cs">DoubleSpace.cs</a>
+<h3>
+Chapter 3: Classes</h3>
+<a href="IntCell.cs">IntCell.cs</a> <a href="TestIntCell.cs">TestIntCell.cs</a>
+<br><a href="FancyIntCell.cs">FancyIntCell.cs</a>
+<br><a href="DateDemo.cs">DateDemo.cs</a>
+<br><a href="Exiting.cs">Exiting.cs</a> <a href="TestExiting.cs">TestExiting.cs</a>
+<br><a href="Ticket.cs">Ticket.cs</a>
+<br><a href="Squares.cs">Squares.cs</a>
+<br><a href="StringArrayList.cs">StringArrayList.cs</a>
+<a href="ReadStringsWithStringArrayList.cs">ReadStringsWithStringArrayList.cs</a>
+<h3>
+Chapter 4: Inheritance</h3>
+<a href="TestException.cs">TestException.cs</a> 
+<br><a href="PersonDemo.cs">PersonDemo.cs</a>
+<br><a href="Shapes.cs">Shapes.cs</a>
+<a href="ShapeDemo.cs">ShapeDemo.cs</a>
+<br><a href="MemoryCell.cs">MemoryCell.cs</a>
+<a href="TestMemoryCell.cs">TestMemoryCell.cs</a>
+<br><a href="SimpleArrayList.cs">SimpleArrayList.cs</a>
+<a href="ReadStringsWithSimpleArrayList.cs">ReadStringsWithSimpleArrayList.cs</a>
+<br><a href="StorageCellDemo.cs">StorageCellDemo.cs</a>
+<br><a href="FindMaxDemo.cs">FindMaxDemo.cs</a>
+
+
+<br><a href="GenericMemoryCell.cs">GenericMemoryCell.cs</a>
+<a href="TestGenericMemoryCell.cs">TestGenericMemoryCell.cs</a>
+<br><a href="GenericSimpleArrayList.cs">GenericSimpleArrayList.cs</a>
+<a href="ReadStringsWithGenericSimpleArrayList.cs">ReadStringsWithGenericSimpleArrayList.cs</a>
+<br><a href="FunctionObjectDemo.cs">FunctionObjectDemo.cs</a>
+<br><a href="FunctionObjectDemoWithNestedClasses.cs">FunctionObjectDemoWithNestedClasses.cs</a>
+<br><a href="StaticParamsDemo.cs">StaticParamsDemo.cs</a>
+
+<h3>
+Chapter 5: Running Times</h3>
+<a href="MaxSumTest.cs">MaxSumTest.cs</a>
+<br><a href="BinarySearchDemo.cs">BinarySearchDemo.cs</a>
+<h3>
+Chapter 6: The Collections API</h3>
+<i><a href="IStack.cs">IStack.cs</a></i> 
+<a href="StackDemo.cs">StackDemo.cs</a>
+<br><i><a href="UnderflowException.cs">UnderflowException.cs</a></i>
+<br><i><a href="IQueue.cs">IQueue.cs</a></i> 
+<a href="QueueDemo.cs">QueueDemo.cs</a>
+<br><b><a href="GenericCollections.cs">GenericCollections.cs</a></b>
+<br><a href="EnumeratorDemo.cs">EnumeratorDemo.cs</a>
+<br><a href="EqualsWithInheritance.cs">EqualsWithInheritance.cs</a>
+<br><b><a href="DictionaryDemo.cs">DictionaryDemo.cs</a></b>
+<br><i><a href="IPriorityQueue.cs">IPriorityQueue.cs</a></i> <a href="PriorityQueueDemo.cs">PriorityQueueDemo.cs</a>
+<h3>
+Chapter 7: Recursion</h3>
+<a href="RecSum.cs">RecSum.cs</a>
+<br><a href="PrintIntDemo.cs">PrintIntDemo.cs</a>
+<br><a href="FactorialDemo.cs">FactorialDemo.cs</a>
+<br><a href="BinarySearchRecursive.cs">BinarySearchRecursive.cs</a>
+<br><a href="Ruler.cs">Ruler.cs</a>
+<br><a href="FractalStar.cs">FractalStar.cs</a>
+<br><a href="Numerical.cs">Numerical.cs</a> <a href="RSA.cs">RSA.cs</a>
+<br><a href="MaxSumTest.cs">MaxSumTest.cs</a>
+<br><a href="MakeChangeDemo.cs">MakeChangeDemo.cs</a>
+<br><a href="Best.cs">Best.cs</a> <a href="TicTacToeSlow.cs">TicTacToeSlow.cs</a>
+<a href="TicTacMainSlow.cs">TicTacMainSlow.cs</a>
+<h3>
+Chapter 8: Sorting</h3>
+<a href="DuplicateTest.cs">DuplicateTest.cs</a>
+<br><a href="Sort.cs">Sort.cs</a> <a href="TestSort.cs">TestSort.cs</a>
+<h3>
+Chapter 9: Randomization</h3>
+<b><a href="Random.cs">Random.cs</a></b>
+<br><a href="Numerical.cs">Numerical.cs</a> <a href="RSA.cs">RSA.cs</a>
+<h3>
+Chapter 10: Fun and Games</h3>
+<a href="WordSearch.cs">WordSearch.cs</a>
+<a href="puz.txt">puz.txt</a>
+<br><a href="Best.cs">Best.cs</a> <a href="TicTacToe.cs">TicTacToe.cs</a>
+<a href="TicTacMain.cs">TicTacMain.cs</a>
+<h3>
+Chapter 11: Applications of Stacks -- Compilers and Parsing</h3>
+<a href="Tokenizer.cs">Tokenizer.cs</a> <a href="Balance.cs">Balance.cs</a>
+<br><a href="Evaluator.cs">Evaluator.cs</a>
+<h3>
+Chapter 12: Utilities</h3>
+<a href="Hzip.cs">Hzip.cs</a>
+<br><a href="Tokenizer.cs">Tokenizer.cs</a> <a href="Xref.cs">Xref.cs</a>
+<h3>
+Chapter 13: Simulation</h3>
+<a href="Josephus.cs">Josephus.cs</a>
+<br><a href="ModemSim.cs">ModemSim.cs</a>
+<h3>
+Chapter 14: Shortest Path Algorithms</h3>
+<a href="Graph.cs">Graph.cs</a> <a href="graph1.txt">graph1.txt</a>
+<a href="graph2.txt">graph2.txt</a> <a href="graph3.txt">graph3.txt</a>
+<h3>
+Chapter 15: Nested Classes and Array-Based List Implementation</h3>
+<b><a href="GenericCollections.cs">GenericCollections.cs</a></b>
+
+<h3>
+Chapter 16: Stacks</h3>
+<i><a href="UnderflowException.cs">UnderflowException.cs</a></i>
+<br><i><a href="ArrayStack.cs">ArrayStack.cs</a></i>
+<br><i><a href="ListStack.cs">ListStack.cs</a></i>
+<br><i><a href="ArrayQueue.cs">ArrayQueue.cs</a></i>
+<br><i><a href="ListQueue.cs">ListQueue.cs</a></i>
+<br><b><a href="GenericCollections.cs">GenericCollections.cs</a></b>
+<h3>
+Chapter 17: Linked Lists</h3>
+<i><a href="LinkedList.cs">LinkedList.cs</a></i> <i><a href="TestLinkedList.cs">TestLinkedList.cs</a></i> 
+<br><i><a href="SortedLinkedList.cs">SortedLinkedList.cs</a></i> <i><a href="TestSortedLinkedList.cs">TestSortedLinkedList.cs</a></i> 
+<h3>
+Chapter 18: Trees</h3>
+<a href="BinaryTree.cs">BinaryTree.cs</a> <a href="TestBinaryTree.cs">TestBinaryTree.cs</a>
+<br><a href="TestTreeIterators.cs">TestTreeIterators.cs</a>
+<h3>
+Chapter 19: Search Trees</h3>
+<i><a href="DuplicateItemException.cs">DuplicateItemException.cs</a> <a href="ItemNotFoundException.cs">ItemNotFoundException.cs</a></i>
+<i><a href="BinarySearchTree.cs">BinarySearchTree.cs</a></i> <i><a href="TestBinarySearchTree.cs">TestBinarySearchTree.cs</a></i>
+<br><i><a href="BinarySearchTreeWithRank.cs">BinarySearchTreeWithRank.cs</a></i> <i><a href="TestBinarySearchTreeWithRank.cs">TestBinarySearchTreeWithRank.cs</a></i>
+<br> <i><a href="BinaryNode.cs">BinaryNode.cs</a></i> <i><a href="Rotations.cs">Rotations.cs</a></i>
+<br><i><a href="RedBlackTree.cs">RedBlackTree.cs</a> <a href="TestRedBlackTree.cs">TestRedBlackTree.cs</a></i>
+<br><i><a href="AATree.cs">AATree.cs</a> <a href="TestAATree.cs">TestAATree.cs</a></i>
+<br><b><a href="GenericCollections.cs">GenericCollections.cs</a></b>
+<h3>
+Chapter 20: Hash Tables</h3>
+<b><a href="GenericCollections.cs">GenericCollections.cs</a></b>
+<h3>
+Chapter 21: Heaps</h3>
+<i><a href="BinaryHeap.cs">BinaryHeap.cs</a> <a href="TestBinaryHeap.cs">TestBinaryHeap.cs</a></i>
+<h3>
+Chapter 22: Splay Trees</h3>
+<i><a href="SplayTree.cs">SplayTree.cs</a> <a href="TestSplayTree.cs">TestSplayTree.cs</a></i>
+<h3>
+Chapter 23: Pairing Heaps</h3>
+<i><a href="IllegalValueException.cs">IllegalValueException.cs</a></i>
+<i><a href="PairingHeap.cs">PairingHeap.cs</a> <a href="TestPairingHeap.cs">TestPairingHeap.cs</a></i>
+<h3>
+Chapter 24: Disjoint Sets</h3>
+<i><a href="DisjointSetsSlow.cs">DisjointSetsSlow.cs</a></i>
+<br><i><a href="DisjointSets.cs">DisjointSets.cs</a></i>
+
+<br>&nbsp;
+</body>
+</html>
